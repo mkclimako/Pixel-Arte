@@ -7,7 +7,6 @@ const colorPalletContainer = document.querySelector('#color-pallet-container');
 const boardColorPalletContainer = document.querySelector('#board-color-pallet-container');
 const frameContainer = document.querySelector('#board-container ');
 const eraserContainer = document.querySelector('#eraser_container');
-const changePixelFormContainer = document.querySelector('#change-pixel-form-container');
 
 
 const darkTheme = () => {
@@ -18,12 +17,10 @@ const darkTheme = () => {
   boardColorPalletContainer.classList.toggle('darkTheme');
   eraserContainer.classList.toggle('darkTheme');
   frameContainer.classList.toggle('darkTheme');
-  changePixelFormContainer.classList.toggle('darkTheme');
 
   document.querySelector('#color-pallet-container').classList.remove('open');
   document.querySelector('#board-color-pallet-container').classList.remove('open');
   document.querySelector('#eraser_container').classList.remove('open');
-  document.querySelector('#change-pixel-form-container').classList.remove('open');
 
 };
 

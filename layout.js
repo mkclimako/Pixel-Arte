@@ -64,12 +64,7 @@ const menuIconSrc = [{
     src:'src/icon/clear-board.svg',
     alt: 'Limpar quadro'
 },
-
 {
-    id:'change-pixels-form',
-    src:'src/icon/change-form-pixel.svg',
-    alt:'Alterar forma do pixel',
-},{
     src:'src/icon/dark-theme.svg',
     alt:'Alterar plano de fundo do board',
     id:'dark-theme'
@@ -269,37 +264,3 @@ menuEraserIconSrc.map((eraseIconSrc) => {
  });
 
  MAIN_SECTION_CONTAINER.appendChild(ERASER_CONTAINER);
-
- // CHANGE PIXEL FORM
-
- const CHANGE_FORM_CONTAINER = document.createElement('section');
- CHANGE_FORM_CONTAINER.setAttribute('id','change-pixel-form-container');
-
- 
- const meuShapesIconSrc = [
-     {
-         id:'losango',
-         src:'src/icon/losango.svg',
-         alt:'Losango',
-         class: 'shapes'
-
-     }, {
-
-        id:'circle',
-        src:'src/icon/circle.svg',
-        alt:'Losango',
-        class: 'shapes'
-
-     }
- ];
-
- meuShapesIconSrc.map((shapeIconsSrc) => {
-     let img = document.createElement('img');
-     img.setAttribute('id',`${shapeIconsSrc.id}`);
-     img.setAttribute('src',`${shapeIconsSrc.src}`);
-     img.setAttribute('alt',`${shapeIconsSrc.alt}`);
-     img.setAttribute('class',`${shapeIconsSrc.class}`)
-     CHANGE_FORM_CONTAINER.appendChild(img);
- });
-
- MAIN_SECTION_CONTAINER.appendChild(CHANGE_FORM_CONTAINER);
