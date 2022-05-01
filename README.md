@@ -1,2 +1,1 @@
-# pixel-art
 # Pixel-Arte
