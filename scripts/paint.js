@@ -52,4 +52,3 @@ const changeFrameBackground = () => {
 
 const FRAME_COLORS = document.querySelectorAll('.colors');
 FRAME_COLORS.forEach(frameColorPallet => frameColorPallet.addEventListener('dblclick',changeFrameBackground));
-

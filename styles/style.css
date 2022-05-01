@@ -205,46 +205,6 @@ section#eraser_container img:hover {
   transition: transform 0.4s;
 }
 
-section#change-pixel-form-container {
-  align-items: center;
-  background-color: #e6e6e6;
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: none;
-  flex-direction: row;
-  height: 70px;
-  justify-content: center;
-  max-width: 100%;
-  position: absolute;
-  top: 40%;
-  transition: 300ms transform ease-out;
-  width: 120px;
-  z-index: 2;
-}
-
-section#change-pixel-form-container.open {
-  display:flex;
-  margin-left: 6%;
-  top: 39%;
-
-}
-
-section#change-pixel-form-container img {
-  cursor: pointer;
-  height: 9vh;
-  padding: 2px;
-  width: 2.28vw;
-}
-
 ::-webkit-scrollbar {
   display: none;
-}
-
-.losango {
-  transform: rotate(45deg);
-  
-}
-
-.circle {
-  border-radius: 50%;
 }

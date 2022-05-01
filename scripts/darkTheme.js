@@ -8,7 +8,6 @@ const boardColorPalletContainer = document.querySelector('#board-color-pallet-co
 const frameContainer = document.querySelector('#board-container ');
 const eraserContainer = document.querySelector('#eraser_container');
 
-
 const darkTheme = () => {
   bodyTag.classList.toggle('darkTheme');
   headerTag.classList.toggle('darkTheme');

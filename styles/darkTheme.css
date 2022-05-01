@@ -14,7 +14,7 @@ header.darkTheme #navigation-menu #page-menu-container h3 {
 section#option-menu.darkTheme,
 section#color-pallet-container.darkTheme,
 section#board-color-pallet-container.darkTheme,
-section#eraser_container.darkTheme,section#change-pixel-form-container.darkTheme {
+section#eraser_container.darkTheme {
   background-color: #3b3b3b;
   transition: background-color 1s;
 }
