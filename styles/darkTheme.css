@@ -1,0 +1,20 @@
+body.darkTheme {
+  background-color: #292828;
+  transition: background-color 1s;
+}
+
+header.darkTheme {
+  background-color: #3b3b3b;
+  transition: background-color 1s;
+}
+header.darkTheme #navigation-menu #page-menu-container h3 {
+  color: rgb(221, 215, 215)
+}
+
+section#option-menu.darkTheme,
+section#color-pallet-container.darkTheme,
+section#board-color-pallet-container.darkTheme,
+section#eraser_container.darkTheme,section#change-pixel-form-container.darkTheme {
+  background-color: #3b3b3b;
+  transition: background-color 1s;
+}
