@@ -29,7 +29,7 @@ body {
 
 header {
   width: 100%;
-  height: clamp(2.5rem, 4.5rem, 9rem);
+  height:8rem;
 
   display: flex;
   align-items:flex-end;
