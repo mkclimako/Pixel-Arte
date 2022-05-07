@@ -49,8 +49,8 @@ header #logo-container {
 }
 
 header #logo-container .logo {
-  width: 4.2rem;
-  height: 4.2rem;
+  width: 7rem;
+  height: 7rem;
   transition: opacity 500ms ease;
 }
 
@@ -60,14 +60,14 @@ header #logo-container .logo:hover {
 
 header #logo-container img {
   position: absolute;
-  width: 4.2rem;
-  height: 4.2rem;
+  width: 7rem;
+  height: 7rem;
   z-index: -1;
 
 }
 
 header #logo-container span {
-  font-size: clamp(2rem,3.2rem,4.2rem);
+  font-size: 3.2rem;
   line-height: 4.2rem;
   transition: transform 250ms;
 
@@ -91,7 +91,7 @@ header nav a {
   transition: transform 250ms;
   color: var(--text-color);
 
-  font-size: clamp(2rem,1.6rem,3.2rem);
+  font-size:3.2rem;
   line-height: 4.2rem;
   
 }
