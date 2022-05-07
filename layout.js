@@ -2,44 +2,6 @@
 
 const BODY = document.querySelector('body');
 
-const HEADER = document.createElement('header');
-HEADER.setAttribute('id','header')
-
-const PAGE_LOGO = document.createElement('img');
-PAGE_LOGO.setAttribute('id','triangle');
-PAGE_LOGO.setAttribute('src','src/icon/triangle.svg');
-PAGE_LOGO.setAttribute('alt', 'Logo da pagina na forma de um triângulo')
-
-HEADER.appendChild(PAGE_LOGO);
-
-BODY.appendChild(HEADER);
-
-const SECTION_HEADER = document.createElement('section');
-SECTION_HEADER.setAttribute('id','navigation-menu');
-
-const SPAN_SECTION_HEADER = document.createElement('span');
-
-const PAGE_MENU_CONTAINER = document.createElement('span');
-PAGE_MENU_CONTAINER.setAttribute('id','page-menu-container');
-
-const HOME = document.createElement('h3');
-HOME.innerText = 'Home';
-
-const ABOUT = document.createElement('h3');
-ABOUT.innerText = 'About';
-
-const CONTACT = document.createElement('h3');
-CONTACT.innerText = 'Contact';
-
-PAGE_MENU_CONTAINER.appendChild(HOME);
-PAGE_MENU_CONTAINER.appendChild(ABOUT);
-PAGE_MENU_CONTAINER.appendChild(CONTACT);
-
-SECTION_HEADER.appendChild(SPAN_SECTION_HEADER);
-
-SECTION_HEADER.appendChild(PAGE_MENU_CONTAINER);
-
-HEADER.appendChild(SECTION_HEADER);
 
 // MAIN SECTION MENU
 

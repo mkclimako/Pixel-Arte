@@ -1,63 +1,55 @@
-body {
-  background-color: #e7e8e9;
+* {
   margin: 0;
   padding: 0;
-  transition: background-color 1s;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-base: 0;
+  --color-porcent: 0%;
+  --main-color: hsl(var(--color-base), var(--color-porcent), 90%);
+  --standard-box-shadow: 3.8px 7.7px 7.7px hsla(var(--color-base), var(--color-porcent), var(--color-porcent), 0.38);
+  --text-color: hsl(var(--color-base), var(--color-porcent), 35%);
+}
+
+body {
+  background-color: var(--main-color);
+  width: 100vw;
+  height: 100vh;
+
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
 }
 
 header {
+  width: 100%;
+  height: clamp(4rem, 7rem, 9rem);
+
+  display: flex;
   align-items: center;
-  background-color: #e6e6e6;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-content: space-between;
+  padding: 0 3.5rem;
+
+  box-shadow: var(--standard-box-shadow);
+}
+
+header nav {
   display: flex;
-  flex-direction: row;
-  height: 7vh;
-  justify-content: flex-end;
-  transition: background-color 1s;
-  width: 100vw;
+  gap: 2rem;
 }
 
-header img#triangle {
-  cursor: pointer;
-  height: 9vh;
-  width: 3.28vw;
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: transform 250ms;
 }
 
-header img#triangle:hover {
-  transform: scale(1.1) rotate(360deg);
-  transition: transform 1s;
-}
-
-header section#navigation-menu {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  justify-content: space-around;
-  width: 47%;
-}
-
-header section#navigation-menu span {
-  width: 60%;
-}
-header section#navigation-menu span#page-menu-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-header section#navigation-menu span#page-menu-container h3{
-  color: #595959;
-  cursor: pointer;
-  font-family: "Shanti", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-  height: 4.6vh;
-  margin-right: 0;
-  width: 9.59vw;
-}
-
-header section#navigation-menu span#page-menu-container h3:hover {
-  transform: scale(1.1);
-  transition: transform 0.4s;
+header nav a:hover {
+  transform: scale(1.2);
 }
 
 section#main-container {
@@ -75,7 +67,7 @@ section#option-menu {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  margin-left: 8px ;
+  margin-left: 8px;
   width: 5%;
 }
 
@@ -86,7 +78,7 @@ section#main-container section#option-menu img {
   width: 2.28vw;
 }
 
-section#main-container  section#option-menu img:hover {
+section#main-container section#option-menu img:hover {
   transform: scale(1.1);
   transition: transform 0.4s;
 }
@@ -116,7 +108,8 @@ section#main-container section#board-container div.pixels {
   width: 20px;
 }
 
-section#color-pallet-container, section#board-color-pallet-container {
+section#color-pallet-container,
+section#board-color-pallet-container {
   background-color: #e6e6e6;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -186,10 +179,9 @@ section#eraser_container {
 }
 
 section#eraser_container.open {
-  display:flex;
+  display: flex;
   margin-left: 6%;
   top: 30%;
-
 }
 
 section#eraser_container img {
@@ -208,3 +200,4 @@ section#eraser_container img:hover {
 ::-webkit-scrollbar {
   display: none;
 }
+
