@@ -49,8 +49,8 @@ header #logo-container {
 }
 
 header #logo-container .logo {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   transition: opacity 500ms ease;
 }
 
@@ -60,8 +60,8 @@ header #logo-container .logo:hover {
 
 header #logo-container img {
   position: absolute;
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   z-index: -1;
 
 }
