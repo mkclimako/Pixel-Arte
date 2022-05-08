@@ -25,6 +25,9 @@ body {
   font-weight: 500;
   color: var(--text-color);
   white-space: nowrap;
+
+  transition: background-color 1s;
+
 }
 
 header {
@@ -37,6 +40,8 @@ header {
   padding: 0 3.5rem;
 
   box-shadow: var(--standard-box-shadow);
+  transition: background-color 1s;
+
 }
 
 header #logo-container {
@@ -53,7 +58,7 @@ header #logo-container .logo {
   height: 5rem;
   transition: opacity 500ms ease;
 
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  filter: drop-shadow(0.3rem 0.5rem 0.2rem rgb(0 0 0 / 0.2));
 }
 
 header #logo-container .logo:hover {
@@ -66,7 +71,7 @@ header #logo-container img {
   height: 5rem;
   z-index: -1;
 
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  filter: drop-shadow(0.3rem 0.5rem 0.2rem rgb(0 0 0 / 0.2));
 }
 
 header #logo-container span {
@@ -74,7 +79,7 @@ header #logo-container span {
   line-height: 4.2rem;
   transition: transform 250ms;
 
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  filter: drop-shadow(0.3rem 0.5rem 0.2rem rgb(0 0 0 / 0.2));
 }
 
 header #logo-container span:hover {
@@ -117,7 +122,8 @@ header nav span p {
 header nav span img {
   width: 50px;
   height: 50px;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+
+  filter: drop-shadow(0.3rem 0.5rem 0.2rem rgb(0 0 0 / 0.2));
 }
 
 main#main-container {
@@ -143,7 +149,9 @@ section#option-menu {
 
   background-color: #e6e6e6;
   box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.34);
-  border-radius: 8px;
+  transition: background-color 1s;
+
+  border-radius: 0.8rem;
 }
 
 section#board-container {
@@ -160,13 +168,14 @@ section#option-menu img {
 
   transition: transform 300ms;
 
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+   filter: drop-shadow(0.3rem 0.5rem 0.2rem rgb(0 0 0 / 0.2));
 }
 
 section#option-menu img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 
 section#board-container div.pixels {
   width: 2rem;
@@ -177,6 +186,10 @@ section#board-container div.pixels {
   border: 1px solid rgba(37, 37, 37, 0.3);
   cursor: pointer;
   float: left;
+}
+
+section#board-container div.pixels:hover {
+  border: 0.3rem solid rgba(37, 37, 37, 0.3);
 }
 
 section#color-pallet-container,
@@ -214,26 +227,17 @@ section#board-color-pallet-container.open {
 
 }
 
-section#color-pallet-container div.colors {
+section#color-pallet-container div.colors,section#board-color-pallet-container div.colors {
   border-radius: 5px;
   bottom: 75.26%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  height: 52px;
-  margin: 10px;
-  width: 58px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   transition: transform 300ms ease;
-}
-
-section#board-color-pallet-container div.colors {
-  border-radius: 5px;
-  bottom: 75.26%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
   cursor: pointer;
-  height: 52px;
-  margin: 10px;
-  width: 58px;
-  transition: transform 300ms ease;
+  
+  height: 5.2rem;
+  width: 5.8rem;
+  margin: 1rem;
 }
 
 section#color-pallet-container div.colors:hover,
@@ -274,12 +278,16 @@ section#eraser_container img {
   width: 4.5rem;
   padding: 2px;
   
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  filter: drop-shadow(0.3rem 0.5rem 0.2rem rgb(0 0 0 / 0.4));
 }
 
 section#eraser_container img:hover {
   transform: scale(1.1);
   transition: transform 0.4s;
+}
+
+.hide {
+  display: none;
 }
 
 ::-webkit-scrollbar {

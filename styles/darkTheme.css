@@ -1,27 +1,27 @@
-body.darkTheme {
-  background-color: #292828;
-  transition: background-color 1s;
-  color: #fff;
+:root {
+  font-size: 62.5%;
+
+  --primary-h: 0;
+  --primary-s: 0%;
+  --primary-l: 20%;
+  --dark-theme-bg: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
 }
 
-header.darkTheme {
-  background-color: #3b3b3b;
-  transition: background-color 1s;
-}
-
-header.darkTheme nav span p {
-  color: #fff;
-
-}
-
-header.darkTheme #logo-container .logo {
-  opacity: 1;
-}
-
-section#option-menu.darkTheme,
+body.darkTheme,header.darkTheme,section#option-menu.darkTheme,
 section#color-pallet-container.darkTheme,
 section#board-color-pallet-container.darkTheme,
 section#eraser_container.darkTheme {
-  background-color: #3b3b3b;
+  background-color: var(--dark-theme-bg);
   transition: background-color 1s;
 }
+
+header.darkTheme span,header.darkTheme nav span p  {
+  color: #fff;
+  transition: color 1s;
+}
+
+header.darkTheme #logo-container .logo:hover {
+  opacity: 1;
+  filter: blur(0.1rem);
+ }
+
