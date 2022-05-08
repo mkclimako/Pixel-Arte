@@ -143,6 +143,18 @@ COLORS.map((color) => {
 
  MAIN_SECTION_CONTAINER.appendChild(BOARD_COLOR_PALLET_CONTAINER);
 
+ //BOARD
+
+ //MAIN SECTION BOARD
+
+const BOARD_CONTAINER = document.getElementById('board-container');
+for (let pixel = 0; pixel <= 3399; pixel += 1) {
+    let createPixels = document.createElement('div');
+    createPixels.setAttribute("class", "pixels erase");
+    BOARD_CONTAINER.appendChild(createPixels)
+}
+
+
  // ERASER OPTIONS
 
  const ERASER_CONTAINER = document.createElement('section');

@@ -32,11 +32,12 @@ header {
   min-height: 8rem;
 
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding: 0 3.5rem;
 
   box-shadow: var(--standard-box-shadow);
+
 }
 
 header #logo-container {
@@ -44,6 +45,7 @@ header #logo-container {
   display: flex;
   align-items: center;
   gap: 2rem;
+
   height: 100%;
 }
 
@@ -83,10 +85,11 @@ header #logo-container span:hover {
 header nav {
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.8rem;
+
   width: 50rem;
-  height: 100%;
+  height: 8rem;
 }
 
 header nav span {
@@ -94,7 +97,8 @@ header nav span {
   align-items: center;
   width: 30%;
   height: 100%;
-
+  
+  margin-bottom: 0.1rem;
   transition: transform 250ms;
 }
 
@@ -165,8 +169,16 @@ section#option-menu img:hover {
   cursor: pointer;
 }
 
-section#board-container svg path {
-  stroke: rgb(82, 80, 80);
+section#board-container div.pixels {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid rgba(37, 37, 37, 0.3);
+  cursor: pointer;
+  float: left;
+
 }
 
 section#color-pallet-container,
