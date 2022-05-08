@@ -17,8 +17,9 @@
 
 body {
   background-color: var(--main-color);
-  width: 100vw;
-  height: 100vh;
+
+  min-width: 100vw;
+  min-height: 100vh;
 
   font-family: "VT323", monospace;
   font-weight: 500;
@@ -27,8 +28,8 @@ body {
 }
 
 header {
-  width: 100%;
-  height: 8rem;
+  min-width: 100%;
+  min-height: 8rem;
 
   display: flex;
   align-items: flex-end;
@@ -119,18 +120,19 @@ header nav span img {
 main#main-container {
   display: flex;
   gap: 3.6rem;
-  height:fit-content;
   justify-content: space-between;
 
-  margin: 3.2rem;
+  height: 80.5rem;
+  width: 185rem;
 
+  margin: 3.2rem;
 }
 
 section#option-menu {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap:3rem;
+  gap: 3rem;
   padding: 3.5rem 2.5rem;
 
   height: 35rem;
@@ -139,7 +141,6 @@ section#option-menu {
   background-color: #e6e6e6;
   box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.34);
   border-radius: 8px;
-
 }
 
 section#board-container {
@@ -154,19 +155,18 @@ section#option-menu img {
   width: 5rem;
   height: 5rem;
 
-  transition: transform 300ms ;
+  transition: transform 300ms;
 
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
-
 }
 
 section#option-menu img:hover {
- transform: scale(1.1);
- cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 section#board-container svg path {
-stroke: rgb(82, 80, 80) ;
+  stroke: rgb(82, 80, 80);
 }
 
 section#color-pallet-container,
@@ -175,17 +175,16 @@ section#board-color-pallet-container {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  
 
   background-color: #e6e6e6;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-  height:30rem;
+  height: 30rem;
   width: 108rem;
   position: absolute;
   top: 10%;
-  
+
   padding: 0.1rem;
 
   transform: translateY(-0.5%);
