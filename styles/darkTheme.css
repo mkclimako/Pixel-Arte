@@ -1,8 +1,8 @@
 :root {
   font-size: 62.5%;
 
-  --primary-h: 0;
-  --primary-s: 0%;
+  --primary-h: 243;
+  --primary-s: 17%;
   --primary-l: 20%;
   --dark-theme-bg: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
 }
