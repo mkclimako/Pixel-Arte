@@ -1,61 +1,7 @@
 // HEADER
 
 const BODY = document.querySelector('body');
-
-
-// MAIN SECTION MENU
-
-const MAIN_SECTION_CONTAINER = document.createElement('section');
-MAIN_SECTION_CONTAINER.setAttribute('id','main-container');
-
-const OPTION_MENU_CONTAINER = document.createElement('section');
-OPTION_MENU_CONTAINER.setAttribute('id','option-menu');
-
-const menuIconSrc = [{
-    id:'drawer-menu',
-    src:'src/icon/drawer-menu.svg',
-    alt:'Menu Paleta de cores',
-},
-{
-    id: 'changeBg-board',
-    src:'src/icon/change-bg-color.svg',
-    alt: 'Alterar cor do plano de fundo do board'
-},
-{
-    id: 'clear-board',
-    src:'src/icon/clear-board.svg',
-    alt: 'Limpar quadro'
-},
-{
-    src:'src/icon/dark-theme.svg',
-    alt:'Alterar plano de fundo do board',
-    id:'dark-theme'
-}
-];
-
-BODY.appendChild(MAIN_SECTION_CONTAINER);
-MAIN_SECTION_CONTAINER.appendChild(OPTION_MENU_CONTAINER);
-
-menuIconSrc.map((iconSrc) => {
-   let img =  document.createElement('img');
-   img.setAttribute('id',`${iconSrc.id}`);
-   img.setAttribute('src',`${iconSrc.src}`);
-   img.setAttribute('alt',`${iconSrc.alt}`);
-   OPTION_MENU_CONTAINER.appendChild(img);
-});
-
-//MAIN SECTION BOARD
-
-const BOARD_CONTAINER = document.createElement('section');
-BOARD_CONTAINER.setAttribute('id','board-container');
-
-for (let pixel = 0; pixel <= 3001; pixel += 1) {
-    let createPixels = document.createElement('div');
-    createPixels.setAttribute("class", "pixels erase");
-    BOARD_CONTAINER.appendChild(createPixels)
-}
-
-MAIN_SECTION_CONTAINER.appendChild(BOARD_CONTAINER);
+const MAIN_SECTION_CONTAINER = document.querySelector('#main-container');
 
 // COLOR PALLET
 
