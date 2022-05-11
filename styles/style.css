@@ -99,7 +99,7 @@ header nav span {
   display: flex;
   align-items: center;
   height: 100%;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
   transition: transform 250ms;
 
 }
