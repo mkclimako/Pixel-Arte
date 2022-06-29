@@ -18,12 +18,12 @@ const changeTheme = () => {
   eraserContainer.classList.toggle('darkTheme');
   frameContainer.classList.toggle('darkTheme');
 
-  document.querySelector('#color-pallet-container').classList.remove('open');
-  document.querySelector('#board-color-pallet-container').classList.remove('open');
-  document.querySelector('#eraser_container').classList.remove('open');
+  // document.querySelector('#color-pallet-container').classList.remove('open');
+  // document.querySelector('#board-color-pallet-container').classList.remove('open');
+  // document.querySelector('#eraser_container').classList.remove('open');
 
-  DARK_MODE.classList.toggle('hide');
-  LIGHT_MODE.classList.toggle('hide');
+  // DARK_MODE.classList.toggle('hide');
+  // LIGHT_MODE.classList.toggle('hide');
 };
 
 DARK_MODE.addEventListener('click', changeTheme);
